@@ -1,0 +1,135 @@
+/* global css */
+img {
+    width: 100%;
+}
+
+
+
+/* header  */
+.bg {
+    background-color: #1052a8;
+    height: 61px;
+}
+
+.contact {
+    max-width: 450.97px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.navbar-nav {
+    --bs-nav-link-hover-color: rgba(var(--bs-primary-rgb));
+}
+
+.menu {
+    max-width: 854px;
+    width: 100%;
+    justify-content: space-between;
+
+    ul {
+        gap: 35px;
+
+        li {
+            &:hover {
+                text-decoration: underline rgba(var(--bs-primary-rgb));
+            }
+        }
+    }
+}
+
+/* header end  */
+
+/* section 1 */
+.background-img-1 {
+    position: relative;
+    margin-top: 31px;
+
+    .section-1-txt {
+        position: absolute;
+        top: 183px;
+        left: 290px;
+        max-width: 583px;
+        width: 100%;
+
+        .sub-text {
+            background-color: #0fe3af;
+            max-width: 354px;
+            width: 100%;
+            font-size: 16px;
+            text-align: center;
+            font-family: lato;
+            line-height: 142%;
+            letter-spacing: 6.5px;
+        }
+
+        .title {
+            max-width: 530px;
+            width: 100%;
+            margin-top: 14px;
+            margin-bottom: 14px;
+
+            div {
+                max-width: 480px;
+                width: 100%;
+                line-height: 114.5%;
+                font-size: 50px;
+                color: #143450;
+                margin-bottom: 23px;
+            }
+
+            .title-text {
+                max-width: 430px;
+                width: 100%;
+                line-height: 142%;
+                font-size: 16px;
+                color: #1c1c1c;
+                font-family: lato;
+            }
+        }
+
+        .button {
+
+            button {
+                font-size: 16px;
+                line-height: 160%;
+                font-family: inter;
+            }
+        }
+    }
+}
+
+/* section 1 end  */
+
+/* section 2 */
+
+.section-2{
+    margin-top: 150px;
+   
+
+    .heading{
+    max-width: 406px;
+    width: 100%;
+    margin-bottom: 24px;
+
+    .sub-text{
+        max-width: 140px;
+        width: 100%;
+        font-size: 14px;
+        line-height: 142%;
+        font-family: lato;
+        letter-spacing: 6.5px;
+        border: 0.5px solid #CECECE;
+        margin-bottom:13px;
+        color: #1c1c1c;
+    }
+
+    .title{
+        color: #1c1c1c;
+        line-height: 130%;
+        font-size: 30px;
+    }
+}
+}
+
+
+/* section 2 end  */
