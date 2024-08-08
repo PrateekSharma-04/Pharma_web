@@ -931,6 +931,7 @@ footer section .background-image .content .visit-links .appointment .text .appoi
   font-family: lato;
 }
 footer section .background-image .content .visit-links .appointment .e-mail {
+  background-color: #ffffff;
   width: 100%;
   margin-bottom: 16px;
 }
