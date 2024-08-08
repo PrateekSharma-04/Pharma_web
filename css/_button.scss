@@ -1,0 +1,26 @@
+.btn{
+    border-radius: unset;
+    font-family: inter;
+
+    &.btn-1{
+        background-color: #0fe3af;
+        color: $tertiary-text-color;
+    }
+
+    &.btn-2{
+        background-color: #0152a8 ;
+        color: #ffffff;
+    }
+
+    &.btn-3{
+        background-color: #0fe3af;
+        color: $primary-color;
+        height: 60px;
+    }
+
+    &.btn-4{
+        color: $primary-color;
+        border: 0.5px solid #CECECE;
+        height: 60px;
+    }
+}
