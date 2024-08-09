@@ -1,4 +1,4 @@
-.btn{
+.btn {
     border-radius: unset;
     font-family: inter;
 
@@ -15,12 +15,44 @@
     &.btn-3{
         background-color: #0fe3af;
         color: $primary-color;
-        height: 60px;
     }
 
     &.btn-4{
         color: $primary-color;
         border: 0.5px solid #CECECE;
+    }
+
+    &.btn-height-1{
         height: 60px;
+    }
+
+    &.btn-height-2{
+        height: 61px;
+    }
+
+    &.btn-width-1{
+        width: 188px;
+    }
+
+    &.btn-width-2{
+        width: 171px;
+    }
+
+    &.btn-width-3{
+        width: 197px;
+    }
+
+    &.btn-width-4{
+        width: 138px;
+    }
+
+    &.btn-font-1{
+        font-size: 18px;
+        line-height: 160%;
+    }
+
+    &.btn-font-2{
+        font-size: 16px;
+        line-height: 160%;
     }
 }

@@ -11,6 +11,17 @@ img {
     margin: 0;
 }
 
+.ff-inter {
+    font-family: inter;
+}
+
+.ff-Montserrat {
+    font-family: Montserrat;
+}
+
+.ff-lato {
+    font-family: Lato;
+}
 
 @import "./variable";
 @import "./button";
@@ -49,11 +60,21 @@ img {
         gap: 35px;
 
         li {
-            &:hover {
-                text-decoration: underline rgba(var(--bs-primary-rgb));
+            &:active {
+                text-decoration: underline 2px rgba(var(--bs-primary-rgb));
+                text-underline-offset: 10px;
+            }
+
+            .underline {
+                text-decoration: underline 2px rgba(var(--bs-primary-rgb));
+                text-underline-offset: 10px;
             }
         }
     }
+}
+
+.marg {
+    margin-top: 39px;
 }
 
 /* header end  */
@@ -104,15 +125,6 @@ img {
                 font-family: lato;
             }
         }
-
-        .button {
-
-            button {
-                font-size: 16px;
-                line-height: 160%;
-                font-family: inter;
-            }
-        }
     }
 }
 
@@ -158,22 +170,25 @@ img {
             .card-height {
                 max-height: 304.9px;
                 height: 100%;
+                border-radius: unset;
 
 
                 .card-body {
+                    background-color: $review-bg-color;
+
                     a {
+                        &:hover {
+                            svg {
+                                circle {
+                                    fill: $secondary-color;
+                                }
+                            }
+                        }
+
                         margin-bottom: 45px;
 
                         &.link-text {
                             color: $tertiary-text-color;
-
-                            svg {
-                                &:hover {
-                                    circle {
-                                        fill: $secondary-color;
-                                    }
-                                }
-                            }
                         }
                     }
 
@@ -205,6 +220,7 @@ img {
                     .card-text {
                         margin-top: 11px;
                         margin-bottom: 11px;
+                        color: $quaternary-text-color;
                     }
                 }
             }
@@ -309,17 +325,7 @@ img {
                     }
                 }
             }
-
-            .button {
-
-                button {
-                    font-size: 16px;
-                    line-height: 160%;
-                    font-family: inter;
-                }
-            }
         }
-
     }
 }
 
@@ -462,7 +468,8 @@ img {
                         font-size: 16px;
                         color: $quaternary-text-color;
                         font-family: lato;
-                        margin-bottom: 42px;
+                        // margin-bottom: 42px;
+                        margin: 0;
 
                         a {
                             text-decoration: none;
@@ -508,14 +515,6 @@ img {
                 }
             }
 
-            .button {
-
-                button {
-                    font-size: 16px;
-                    line-height: 160%;
-                    font-family: inter;
-                }
-            }
         }
     }
 }
@@ -579,6 +578,8 @@ img {
             .card-size {
                 max-width: 584px;
                 background-color: $review-bg-color;
+                border-radius: unset;
+                border: none;
 
                 .review {
                     max-width: 492px;
@@ -762,7 +763,7 @@ img {
                     }
 
                     .first-member-details {
-                        max-width: 178px;
+                        max-width: 191px;
                         width: 100%;
                         margin: 23px 0;
 
@@ -1010,6 +1011,27 @@ footer {
                         max-width: 662px;
                         width: 100%;
 
+                        .call-container {
+                            max-width: 214px;
+                            width: 100%;
+
+                            .call {
+                                color: $quaternary-text-color;
+                                width: 100%;
+                            }
+
+                        }
+
+                        .mail-container {
+                            max-width: 222px;
+                            width: 100%;
+
+                            .mail {
+                                color: $quaternary-text-color;
+                                width: 100%;
+                            }
+                        }
+
                         .follow {
                             max-width: 121px;
                             width: 100%;
@@ -1109,11 +1131,17 @@ footer {
                             background-color: #ffffff;
                             width: 100%;
                             margin-bottom: 16px;
+                            border-radius: unset;
+                            border: none;
+                            cursor: auto;
 
                             .placeholder {
                                 width: 100%;
                                 padding: 17px 25px;
                                 color: #b9b9b9;
+                                border-radius: unset;
+                                border: none;
+                                cursor: auto;
                             }
                         }
                     }
@@ -1121,7 +1149,8 @@ footer {
             }
 
         }
-        .copyright{
+
+        .copyright {
             margin-top: 20px;
             font-size: 16px;
             font-family: lato;

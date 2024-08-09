@@ -11,6 +11,18 @@ img {
   margin: 0;
 }
 
+.ff-inter {
+  font-family: inter;
+}
+
+.ff-Montserrat {
+  font-family: Montserrat;
+}
+
+.ff-lato {
+  font-family: Lato;
+}
+
 .btn {
   border-radius: unset;
   font-family: inter;
@@ -26,12 +38,36 @@ img {
 .btn.btn-3 {
   background-color: #0fe3af;
   color: #0152A8;
-  height: 60px;
 }
 .btn.btn-4 {
   color: #0152A8;
   border: 0.5px solid #CECECE;
+}
+.btn.btn-height-1 {
   height: 60px;
+}
+.btn.btn-height-2 {
+  height: 61px;
+}
+.btn.btn-width-1 {
+  width: 188px;
+}
+.btn.btn-width-2 {
+  width: 171px;
+}
+.btn.btn-width-3 {
+  width: 197px;
+}
+.btn.btn-width-4 {
+  width: 138px;
+}
+.btn.btn-font-1 {
+  font-size: 18px;
+  line-height: 160%;
+}
+.btn.btn-font-2 {
+  font-size: 16px;
+  line-height: 160%;
 }
 
 /* header  */
@@ -65,9 +101,19 @@ img {
 .menu ul {
   gap: 35px;
 }
-.menu ul li:hover {
-  -webkit-text-decoration: underline rgba(var(--bs-primary-rgb));
-          text-decoration: underline rgba(var(--bs-primary-rgb));
+.menu ul li:active {
+  -webkit-text-decoration: underline 2px rgba(var(--bs-primary-rgb));
+          text-decoration: underline 2px rgba(var(--bs-primary-rgb));
+  text-underline-offset: 10px;
+}
+.menu ul li .underline {
+  -webkit-text-decoration: underline 2px rgba(var(--bs-primary-rgb));
+          text-decoration: underline 2px rgba(var(--bs-primary-rgb));
+  text-underline-offset: 10px;
+}
+
+.marg {
+  margin-top: 39px;
 }
 
 /* header end  */
@@ -114,11 +160,6 @@ img {
   color: #1C1C1C;
   font-family: lato;
 }
-.background-img-1 .section-1-txt .button button {
-  font-size: 16px;
-  line-height: 160%;
-  font-family: inter;
-}
 
 /* section 1 end  */
 /* section 2 */
@@ -157,15 +198,19 @@ img {
 .section-2 .vertical-gap .card-gap .card-height {
   max-height: 304.9px;
   height: 100%;
+  border-radius: unset;
+}
+.section-2 .vertical-gap .card-gap .card-height .card-body {
+  background-color: #f1f1f1;
 }
 .section-2 .vertical-gap .card-gap .card-height .card-body a {
   margin-bottom: 45px;
 }
+.section-2 .vertical-gap .card-gap .card-height .card-body a:hover svg circle {
+  fill: #0FE3AF;
+}
 .section-2 .vertical-gap .card-gap .card-height .card-body a.link-text {
   color: #363636;
-}
-.section-2 .vertical-gap .card-gap .card-height .card-body a.link-text svg:hover circle {
-  fill: #0FE3AF;
 }
 .section-2 .vertical-gap .card-gap .card-height .card-body .icon-1 {
   margin-top: 29px;
@@ -190,6 +235,7 @@ img {
 .section-2 .vertical-gap .card-gap .card-height .card-body .card-text {
   margin-top: 11px;
   margin-bottom: 11px;
+  color: #545454;
 }
 .section-2 .vertical-gap .card-gap .card-without-img {
   max-width: 286px;
@@ -275,11 +321,6 @@ img {
   line-height: 142%;
   font-size: 14px;
   font-family: lato;
-}
-.background-img-2 .section-3-txt .about-us .button button {
-  font-size: 16px;
-  line-height: 160%;
-  font-family: inter;
 }
 
 /* section 3 end */
@@ -404,7 +445,7 @@ img {
   font-size: 16px;
   color: #545454;
   font-family: lato;
-  margin-bottom: 42px;
+  margin: 0;
 }
 .section-5 .section-5-txt .about-us .title .title-text .title-text-1 a {
   text-decoration: none;
@@ -440,11 +481,6 @@ img {
   line-height: 142%;
   color: #1C1C1C;
   font-family: lato;
-}
-.section-5 .section-5-txt .about-us .button button {
-  font-size: 16px;
-  line-height: 160%;
-  font-family: inter;
 }
 
 /* section 5 end */
@@ -498,6 +534,8 @@ img {
 .section-7 .vertical-gap .card-gap .card-size {
   max-width: 584px;
   background-color: #f1f1f1;
+  border-radius: unset;
+  border: none;
 }
 .section-7 .vertical-gap .card-gap .card-size .review {
   max-width: 492px;
@@ -648,7 +686,7 @@ img {
   width: 100%;
 }
 .section-8 .content .team .team-details .first-member .first-member-details {
-  max-width: 178px;
+  max-width: 191px;
   width: 100%;
   margin: 23px 0;
 }
@@ -852,6 +890,22 @@ footer section .background-image .content .title .contact-details {
   max-width: 662px;
   width: 100%;
 }
+footer section .background-image .content .title .contact-details .call-container {
+  max-width: 214px;
+  width: 100%;
+}
+footer section .background-image .content .title .contact-details .call-container .call {
+  color: #545454;
+  width: 100%;
+}
+footer section .background-image .content .title .contact-details .mail-container {
+  max-width: 222px;
+  width: 100%;
+}
+footer section .background-image .content .title .contact-details .mail-container .mail {
+  color: #545454;
+  width: 100%;
+}
 footer section .background-image .content .title .contact-details .follow {
   max-width: 121px;
   width: 100%;
@@ -934,11 +988,17 @@ footer section .background-image .content .visit-links .appointment .e-mail {
   background-color: #ffffff;
   width: 100%;
   margin-bottom: 16px;
+  border-radius: unset;
+  border: none;
+  cursor: auto;
 }
 footer section .background-image .content .visit-links .appointment .e-mail .placeholder {
   width: 100%;
   padding: 17px 25px;
   color: #b9b9b9;
+  border-radius: unset;
+  border: none;
+  cursor: auto;
 }
 footer section .copyright {
   margin-top: 20px;
