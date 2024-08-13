@@ -24,35 +24,69 @@
 
     &.btn-height-1{
         height: 60px;
+
+        @media(min-width : 426px) and (max-width : 769px){
+            height: 50px;
+        }
     }
 
     &.btn-height-2{
         height: 61px;
+
+        @media(min-width : 426px) and (max-width : 769px){
+            height: 51px;
+        }
     }
 
     &.btn-width-1{
         width: 188px;
+
+        @media(min-width : 426px) and (max-width : 769px){
+            width: 180px;
+        }
     }
 
     &.btn-width-2{
         width: 171px;
+
+        @media(min-width : 426px) and (max-width : 769px){
+            width: 165px;
+        }
     }
 
     &.btn-width-3{
         width: 197px;
+
+        @media(min-width : 426px) and (max-width : 769px){
+            width: 185px;
+        }
     }
 
     &.btn-width-4{
         width: 138px;
+
+        @media(min-width : 426px) and (max-width : 769px){
+            width: 130px;
+        }
     }
 
     &.btn-font-1{
         font-size: 18px;
         line-height: 160%;
+
+        @media(min-width : 426px) and (max-width : 769px){
+            font-size: 16px;
+            line-height: 148%;
+        }
     }
 
     &.btn-font-2{
         font-size: 16px;
         line-height: 160%;
+
+        @media(min-width : 426px) and (max-width : 769px){
+            font-size: 14px;
+            line-height: 148%;
+        }
     }
 }

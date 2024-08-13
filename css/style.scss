@@ -1,3 +1,8 @@
+@import "./variable";
+@import "./button";
+@import "./typography";
+
+
 /* global css */
 img {
     width: 100%;
@@ -23,15 +28,64 @@ img {
     font-family: Lato;
 }
 
-@import "./variable";
-@import "./button";
-@import "./typography";
+@media(min-width : 200px) and (max-width : 769px) {
+    .normal-text-1 {
+        font-size: 14px !important;
+        line-height: 130% !important;
+    }
+}
 
+@media(min-width : 200px) and (max-width : 769px) {
+    .normal-text-2 {
+        font-size: 14px !important;
+        line-height: 140% !important;
+    }
+}
+
+@media(min-width : 200px) and (max-width : 769px) {
+    .bold-text-1 {
+        font-size: 40px !important;
+        line-height: 104.5% !important;
+    }
+}
+
+@media(min-width : 200px) and (max-width : 769px) {
+    .bold-text-2 {
+        font-size: 30px !important;
+        line-height: 94.5% !important;
+    }
+}
+
+@media(min-width : 200px) and (max-width : 769px) {
+    .bold-text-3 {
+        font-size: 18px !important;
+        line-height: 104.5% !important;
+    }
+}
+
+@media(min-width : 200px) and (max-width : 769px) {
+    .bold-text-4 {
+        font-size: 25px !important;
+        line-height: 120% !important;
+    }
+}
+
+/* global css end */
 
 /* header  */
 .bg {
     background-color: $primary-color;
     height: 61px;
+
+    @media(max-width: 537px) {
+        height: fit-content;
+    }
+
+    @media (max-width : 576px) {
+        .pad-zero {
+            padding: 0 !important;
+        }
+    }
 }
 
 .contact {
@@ -83,12 +137,45 @@ img {
 .background-img-1 {
     position: relative;
     margin-top: 31px;
+    // min-height: 595px;
+    // height: 100%;
+
+    img {
+        // position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
 
     .section-1-txt {
         position: absolute;
-        left: 15%;
+        // left: 15%;
         max-width: 583px;
         width: 100%;
+        max-height: 372.85px;
+        height: 100%;
+        // margin: 24px;
+        margin-right: auto;
+        margin-left: calc(100% - 90%);
+
+        @media(min-width : 705px) and (max-width : 938px) {
+            max-width: 520px;
+            max-height: 280px;
+            margin-left: calc(100% - 95%);
+        }
+
+        @media(min-width : 530px) and (max-width : 704px) {
+            max-width: 480px;
+            max-height: 240px;
+            margin-left: calc(100% - 98.5%);
+        }
+
+        @media(min-width : 200px) and (max-width : 530px) {
+            max-width: 400px;
+            max-height: 180px;
+            margin-left: calc(100% - 100%);
+        }
 
         .sub-text {
             background-color: $secondary-color;
@@ -99,6 +186,24 @@ img {
             font-family: lato;
             line-height: 142%;
             letter-spacing: 6.5px;
+
+            @media(min-width : 705px) and (max-width : 938px) {
+                font-size: 14px !important;
+                line-height: 130% !important;
+            }
+
+            @media(min-width : 530px) and (max-width : 704px) {
+                font-size: 14px !important;
+                line-height: 120% !important;
+                max-width: 330px;
+            }
+
+            @media(min-width : 200px) and (max-width : 530px) {
+                font-size: 12px !important;
+                line-height: 110% !important;
+                max-width: 290px;
+                letter-spacing: 5.5px;
+            }
         }
 
         .title {
@@ -107,6 +212,16 @@ img {
             margin-top: 14px;
             margin-bottom: 14px;
 
+            @media(min-width : 355px) and (max-width : 530px) {
+                margin-top: 8px;
+                margin-bottom: 8px;
+            }
+
+            @media(min-width : 200px) and (max-width : 355px) {
+                margin-bottom: 5px;
+                margin-top: 5px;
+            }
+
             div {
                 max-width: 480px;
                 width: 100%;
@@ -114,6 +229,29 @@ img {
                 font-size: 50px;
                 color: $secondary-text-color;
                 margin-bottom: 23px;
+
+                @media(min-width : 705px) and (max-width : 938px) {
+                    font-size: 40px !important;
+                    line-height: 104.5% !important;
+                }
+
+                @media(min-width : 530px) and (max-width : 704px) {
+                    font-size: 30px !important;
+                    line-height: 104.5% !important;
+                    max-width: 390px;
+                    margin-bottom: 13px;
+                }
+
+                @media(min-width : 200px) and (max-width : 530px) {
+                    font-size: 20px !important;
+                    line-height: 94.5% !important;
+                    max-width: 350px;
+                    margin-bottom: 8px;
+                }
+
+                @media(min-width : 200px) and (max-width : 355px) {
+                    margin-bottom: 4px;
+                }
             }
 
             .title-text {
@@ -123,6 +261,61 @@ img {
                 font-size: 16px;
                 color: $primary-text-color;
                 font-family: lato;
+                margin-bottom: 0;
+
+                @media(min-width : 705px) and (max-width : 938px) {
+                    font-size: 14px !important;
+                    line-height: 130% !important;
+                }
+
+                @media(min-width : 530px) and (max-width : 704px) {
+                    font-size: 14px !important;
+                    line-height: 120% !important;
+                    max-width: 370px;
+                }
+
+                @media(min-width : 200px) and (max-width : 530px) {
+                    font-size: 12px !important;
+                    line-height: 100% !important;
+                    max-width: 330px;
+                }
+            }
+        }
+
+
+        @media(min-width : 705px) and (max-width : 938px) {
+            .bg-btn-1 {
+                height: 50px;
+                width: 165px;
+                font-size: 14px;
+                line-height: 148%;
+            }
+        }
+
+        @media(min-width : 530px) and (max-width : 704px) {
+            .bg-btn-1 {
+                height: 40px;
+                width: 155px;
+                font-size: 14px;
+                line-height: 138%;
+            }
+        }
+
+        @media(min-width : 355px) and (max-width : 530px) {
+            .bg-btn-1 {
+                height: 30px;
+                width: 135px;
+                font-size: 12px;
+                line-height: 128%;
+            }
+        }
+
+        @media(min-width : 200px) and (max-width : 355px) {
+            .bg-btn-1 {
+                height: 25px;
+                width: 90px;
+                font-size: 10px;
+                line-height: 100%;
             }
         }
     }
@@ -163,9 +356,11 @@ img {
 
     .vertical-gap {
         row-gap: 1.25rem;
+        max-width: 1200px;
+        width: 100%;
 
         .card-gap {
-            gap: 1.25rem;
+            row-gap: 1.25rem;
 
             .card-height {
                 max-height: 304.9px;
@@ -245,24 +440,103 @@ img {
     position: relative;
     margin-top: 31px;
     margin-bottom: 99px;
+    // min-height: 711px;
+    height: 100%;
+
+
+    img {
+        // position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 
     .section-3-txt {
         position: absolute;
-        right: 15%;
+        right: 10%;
+        margin-left: auto;
         background-color: #ffffff;
         max-width: 548px;
         width: 100%;
         padding: 52px 0;
+        // margin: 24px;
+        // margin-left: auto;
+        // margin-right: calc(100% - 90%);
 
+        @media(min-width : 906px) and (max-width : 1200px) {
+            max-width: 655px;
+            padding: 24px 0;
+            right: 8%;
+        }
+
+        @media(min-width : 906px) and (max-width : 1060px) {
+            right: 5%;
+        }
+
+        @media(min-width : 735px) and (max-width : 906px) {
+            max-width: 420px;
+            padding: 9px;
+            right: 3%;
+        }
+
+        @media(min-width : 735px) and (max-width : 906px) {
+            right: 2%;
+        }
+
+        @media(min-width : 655px) and (max-width : 735px) {
+            max-width: 350px;
+            padding: 7px;
+            right: 2%;
+        }
+
+        @media(min-width : 510px) and (max-width : 655px) {
+            max-width: 300px;
+            padding: 5px;
+            right: 1.5%;
+        }
+
+        @media(min-width : 415px) and (max-width : 510px) {
+            max-width: 250px;
+            padding: 3px;
+            right: 1%;
+        }
+
+        @media(min-width : 200px) and (max-width : 415px) {
+            max-width: 200px;
+            padding: 2px;
+            right: 0;
+        }
 
         .about-us {
             max-width: 460px;
             width: 100%;
 
+
+
             .title {
                 max-width: 530px;
                 width: 100%;
                 margin-bottom: 30px;
+
+                @media(min-width : 906px) and (max-width : 1060px) {
+                    margin-bottom: 20px;
+                }
+
+                @media(min-width : 735px) and (max-width : 906px) {
+                    margin-bottom: 15px;
+                }
+
+                @media(min-width : 655px) and (max-width : 735px) {
+                    margin-bottom: 10px;
+                }
+
+                @media(min-width : 510px) and (max-width : 655px){
+                    margin-bottom: 8px;
+                }
+
+                @media(min-width : 300px) and (max-width : 510px) {
+                    margin-bottom: 5px;
+                }
 
                 .sub-text {
                     max-width: 141px;
@@ -274,6 +548,44 @@ img {
                     border: 0.5px solid #CECECE;
                     margin-bottom: 13px;
                     color: $primary-text-color;
+
+                    @media(min-width : 906px) and (max-width : 1060px) {
+                        font-size: 14px;
+                        line-height: 132%;
+                        margin-bottom: 10px;
+                    }
+
+                    @media(min-width : 735px) and (max-width : 906px) {
+                        font-size: 14px;
+                        line-height: 122%;
+                        margin-bottom: 8px;
+                    }
+
+                    @media(min-width : 655px) and (max-width : 735px) {
+                        font-size: 14px;
+                        line-height: 112%;
+                        margin-bottom: 5px;
+                    }
+
+                    @media(min-width : 510px) and (max-width : 655px) {
+                        font-size: 12px;
+                        line-height: 105%;
+                        margin-bottom: 3px;
+                    }
+
+                    @media(min-width : 415px) and (max-width : 510px) {
+                        font-size: 10px;
+                        line-height: 105%;
+                        margin-bottom: 3px;
+                        letter-spacing: 4.5px;
+                    }
+
+                    @media(min-width : 200px) and (max-width : 415px) {
+                        font-size: 8px;
+                        line-height: 100%;
+                        margin-bottom: 3px;
+                        letter-spacing: 3.5px;
+                    }
                 }
 
                 div {
@@ -283,6 +595,54 @@ img {
                     font-size: 30px;
                     color: $secondary-text-color;
                     margin-bottom: 23px;
+
+                    @media(min-width : 906px) and (max-width : 1060px) {
+                        font-size: 25px;
+                        line-height: 120%;
+                        margin-bottom: 10px;
+                    }
+
+                    @media(min-width : 735px) and (max-width : 906px) {
+                        font-size: 23px;
+                        line-height: 115%;
+                        margin-bottom: 8px;
+                    }
+
+                    @media(min-width : 655px) and (max-width : 735px) {
+                        font-size: 20px;
+                        line-height: 110%;
+                        margin-bottom: 5px;
+                    }
+
+                    @media(min-width : 510px) and (max-width : 655px) {
+                        font-size: 18px;
+                        line-height: 105%;
+                        margin-bottom: 3px;
+                    }
+
+                    @media(min-width : 300px) and (max-width : 510px) {
+                        font-size: 15px;
+                        line-height: 105%;
+                        margin-bottom: 3px;
+                    }
+
+                    @media(min-width : 385px) and (max-width : 415px) {
+                        font-size: 12px;
+                        line-height: 105%;
+                        margin-bottom: 3px;
+                    }
+
+                    @media(min-width : 340px) and (max-width : 385px) {
+                        font-size: 10px;
+                        line-height: 100%;
+                        margin-bottom: 3px;
+                    }
+
+                    @media(min-width : 200px) and (max-width : 340px) {
+                        font-size: 8px;
+                        line-height: 100%;
+                        margin-bottom: 3px;
+                    }
                 }
 
                 .title-text {
@@ -291,6 +651,36 @@ img {
                     font-size: 16px;
                     color: $quaternary-text-color;
                     font-family: lato;
+
+                    @media(min-width : 906px) and (max-width : 1060px) {
+                        font-size: 16px;
+                        line-height: 132%;
+                    }
+
+                    @media(min-width : 735px) and (max-width : 906px) {
+                        font-size: 14px;
+                        line-height: 122%;
+                    }
+
+                    @media(min-width : 655px) and (max-width : 735px) {
+                        font-size: 12px;
+                        line-height: 112%;
+                    }
+
+                    @media(min-width : 510px) and (max-width : 655px) {
+                        font-size: 10px;
+                        line-height: 105%;
+                    }
+
+                    @media(min-width : 375px) and (max-width : 510px) {
+                        font-size: 8px;
+                        line-height: 102%;
+                    }
+
+                    @media(min-width : 200px) and (max-width : 375px) {
+                        font-size: 5px;
+                        line-height: 102%;
+                    }
                 }
             }
 
@@ -299,9 +689,59 @@ img {
                 width: 100%;
                 margin-bottom: 30px;
 
+                @media(min-width : 906px) and (max-width : 1060px) {
+                    margin-bottom: 20px;
+                }
+
+                @media(min-width : 735px) and (max-width : 906px) {
+                    margin-bottom: 15px;
+                }
+
+                @media(min-width : 655px) and (max-width : 735px) {
+                    margin-bottom: 10px;
+                }
+
+                @media(min-width : 510px) and (max-width : 655px) {
+                    margin-bottom: 8px;
+                }
+
+                @media(min-width : 200px) and (max-width : 510px) {
+                    margin-bottom: 5px;
+                }
+
                 .speciality {
                     max-width: 195px;
                     width: 100%;
+
+                    @media(min-width : 510px) and (max-width : 655px) {
+                        max-width: 160px;
+                    }
+
+                    @media(min-width : 300px) and (max-width : 510px) {
+                        max-width: 155px;
+                    }
+
+                    svg {
+                        @media(min-width : 735px) and (max-width : 906px) {
+                            width: 50px;
+                            height: 50px;
+                        }
+
+                        @media(min-width : 655px) and (max-width : 735px) {
+                            width: 40px;
+                            height: 40px;
+                        }
+
+                        @media(min-width : 510px) and (max-width : 655px) {
+                            width: 30px;
+                            height: 30px;
+                        }
+
+                        @media(min-width : 200px) and (max-width : 510px) {
+                            width: 25px;
+                            height: 25px;
+                        }
+                    }
 
                     div {
                         max-width: 121px;
@@ -309,6 +749,30 @@ img {
                         line-height: 142%;
                         font-size: 14px;
                         font-family: lato;
+
+                        @media(min-width : 906px) and (max-width : 1060px) {
+                            line-height: 132%;
+                        }
+
+                        @media(min-width : 735px) and (max-width : 906px) {
+                            font-size: 14px;
+                            line-height: 122%;
+                        }
+
+                        @media(min-width : 655px) and (max-width : 735px) {
+                            font-size: 12px;
+                            line-height: 112%;
+                        }
+
+                        @media(min-width : 510px) and (max-width : 655px) {
+                            font-size: 10px;
+                            line-height: 102%;
+                        }
+
+                        @media(min-width : 200px) and (max-width : 510px) {
+                            font-size: 8px;
+                            line-height: 102%;
+                        }
                     }
                 }
 
@@ -316,13 +780,103 @@ img {
                     max-width: 190px;
                     width: 100%;
 
+                    @media(min-width : 510px) and (max-width : 655px) {
+                        max-width: 155px;
+                    }
+
+                    @media(min-width : 300px) and (max-width : 510px) {
+                        max-width: 150px;
+                    }
+
+                    svg {
+                        @media(min-width : 735px) and (max-width : 906px) {
+                            width: 50px;
+                            height: 50px;
+                        }
+
+                        @media(min-width : 655px) and (max-width : 735px) {
+                            width: 40px;
+                            height: 40px;
+                        }
+
+                        @media(min-width : 510px) and (max-width : 655px) {
+                            width: 30px;
+                            height: 30px;
+                        }
+
+                        @media(min-width : 200px) and (max-width : 510px) {
+                            width: 25px;
+                            height: 25px;
+                        }
+                    }
+
                     div {
                         max-width: 117px;
                         width: 100%;
                         line-height: 142%;
                         font-size: 14px;
                         font-family: lato;
+
+                        @media(min-width : 906px) and (max-width : 1060px) {
+                            line-height: 132%;
+                        }
+
+                        @media(min-width : 735px) and (max-width : 906px) {
+                            font-size: 14px;
+                            line-height: 122%;
+                        }
+
+                        @media(min-width : 655px) and (max-width : 735px) {
+                            font-size: 12px;
+                            line-height: 112%;
+                        }
+
+                        @media(min-width : 510px) and (max-width : 655px) {
+                            font-size: 10px;
+                            line-height: 102%;
+                        }
+
+                        @media(min-width : 200px) and (max-width : 510px) {
+                            font-size: 8px;
+                            line-height: 102%;
+                        }
                     }
+                }
+            }
+
+            @media(min-width : 735px) and (max-width : 906px) {
+                .bg-btn-2 {
+                    height: 50px;
+                    width: 165px;
+                    font-size: 14px;
+                    line-height: 148%;
+                }
+            }
+
+            @media(min-width : 655px) and (max-width : 735px) {
+                .bg-btn-2 {
+                    height: 40px;
+                    width: 155px;
+                    font-size: 14px;
+                    line-height: 138%;
+                }
+            }
+
+            @media(min-width : 510px) and (max-width : 655px) {
+                .bg-btn-2 {
+                    height: 30px;
+                    width: 135px;
+                    font-size: 12px;
+                    line-height: 128%;
+                }
+            }
+
+            @media(min-width : 200px) and (max-width : 510px) {
+                .bg-btn-2 {
+                    height: 20px;
+                    width: 115px;
+                    font-size: 10px;
+                    line-height: 118%;
                 }
             }
         }
@@ -422,14 +976,27 @@ img {
         max-width: 1203px;
         width: 100%;
 
+        @media (max-width : 992px) {
+            flex-direction: column-reverse;
+            row-gap: 20px;
+        }
+
         .about-us {
             max-width: 519px;
             width: 100%;
+
+            @media (max-width : 992px) {
+                max-width: 100%;
+            }
 
             .title {
                 max-width: 519px;
                 width: 100%;
                 margin-bottom: 30px;
+
+                @media (max-width : 992px) {
+                    max-width: 100%;
+                }
 
                 .sub-text {
                     max-width: 216px;
@@ -451,6 +1018,10 @@ img {
                     font-size: 30px;
                     color: $secondary-text-color;
                     margin-bottom: 23px;
+
+                    @media (max-width : 992px) {
+                        max-width: 100%;
+                    }
                 }
 
                 .title-text {
@@ -461,8 +1032,12 @@ img {
                     font-family: lato;
                     padding: 10px 0;
 
+                    @media (max-width : 992px) {
+                        max-width: 100%;
+                    }
+
                     .title-text-1 {
-                        max-width: 500px;
+                        max-width: 655px;
                         width: 100%;
                         line-height: 142%;
                         font-size: 16px;
@@ -475,16 +1050,24 @@ img {
                             text-decoration: none;
                             color: $primary-color;
                         }
+
+                        @media (max-width : 992px) {
+                            max-width: 100%;
+                        }
                     }
 
                     .title-text-2 {
-                        max-width: 500px;
+                        max-width: 655px;
                         width: 100%;
                         line-height: 142%;
                         font-size: 16px;
                         color: $quaternary-text-color;
                         font-family: lato;
                         margin-bottom: 0;
+
+                        @media (max-width : 992px) {
+                            max-width: 100%;
+                        }
                     }
                 }
             }
@@ -708,7 +1291,6 @@ img {
     .content {
         max-width: 1213px;
         width: 100%;
-        padding: 0;
 
         .team {
             margin-top: 147px;
@@ -744,6 +1326,11 @@ img {
             }
 
             .team-details {
+
+                @media(max-width : 1139px) {
+                    justify-content: center !important;
+                    align-items: center;
+                }
 
                 .first-member {
                     background-color: $team-member-bg-color;
@@ -818,6 +1405,11 @@ img {
             .experience-briefing {
                 max-width: 1136px;
                 width: 100%;
+
+                @media(max-width : 785px) {
+                    justify-content: center !important;
+                    align-items: center;
+                }
 
                 .experience {
                     max-width: fit-content;
@@ -913,6 +1505,10 @@ img {
         max-width: 1200px;
         width: 100%;
 
+        @media(max-width : 1200px) {
+            padding: 0 12px;
+        }
+
         .heading {
             width: 100%;
             margin-bottom: 47px;
@@ -948,6 +1544,7 @@ img {
             row-gap: 31px;
 
             .first-blogs {
+                gap: 31px;
 
                 .first-card {
                     max-width: 584px;
@@ -961,6 +1558,10 @@ img {
                     .card-text {
                         max-width: 336px;
                         width: 100%;
+
+                        @media(max-width : 580px) {
+                            max-width: 100%;
+                        }
 
                         .sub-text {
                             max-width: 212px;
@@ -995,10 +1596,11 @@ footer {
 
     section {
         .background-image {
-            position: relative;
+            background-color: #E5F2EF;
+            margin-bottom: 20px;
+            min-height: 557px;
 
             .content {
-                position: absolute;
                 max-width: 1328px;
                 width: 100%;
                 row-gap: 63px;
@@ -1019,7 +1621,6 @@ footer {
                                 color: $quaternary-text-color;
                                 width: 100%;
                             }
-
                         }
 
                         .mail-container {
@@ -1050,114 +1651,117 @@ footer {
                         line-height: 141%;
                         color: $primary-text-color;
                     }
+                }
 
-                    .explore {
-                        max-width: 91px;
+                .explore {
+                    max-width: 91px;
+                    width: 100%;
+
+                    .heading {
+                        max-width: 78px;
                         width: 100%;
+                        font-size: 20px;
+                        line-height: 114.5%;
+                        color: $primary-text-color;
+                        margin-bottom: 14px;
+                    }
+
+                    .links {
+                        font-family: lato;
+                        font-size: 16px;
+                        line-height: 200%;
+
+                        a {
+                            color: $quaternary-text-color;
+                        }
+                    }
+                }
+
+                .uitility {
+                    max-width: 136px;
+                    width: 100%;
+
+                    @media(max-width : 1046px) {
+                        font-size: 18px !important;
+                        line-height: 104.5% !important;
+                    }
+
+                    .heading {
+                        font-size: 20px;
+                        line-height: 114.5%;
+                        color: $primary-text-color;
+                        margin-bottom: 12px;
+                    }
+
+                    .links {
+                        max-width: 111px;
+                        width: 100%;
+                        font-family: lato;
+                        font-size: 16px;
+                        line-height: 200%;
+
+                        a {
+                            color: $quaternary-text-color;
+                        }
+                    }
+                }
+
+                .appointment {
+                    max-width: 326px;
+                    width: 100%;
+
+                    .text {
+                        max-width: 325px;
+                        width: 100%;
+                        margin-bottom: 16px;
 
                         .heading {
-                            max-width: 78px;
+                            max-width: 227px;
                             width: 100%;
                             font-size: 20px;
                             line-height: 114.5%;
                             color: $primary-text-color;
-                            margin-bottom: 14px;
+                            margin-bottom: 16px;
                         }
 
-                        .links {
-                            font-family: lato;
+                        .appointment-text {
                             font-size: 16px;
-                            line-height: 200%;
-
-                            a {
-                                color: $quaternary-text-color;
-                            }
-
+                            line-height: 142%;
+                            color: $quaternary-text-color;
+                            font-family: lato;
                         }
                     }
 
-                    .uitility {
-                        max-width: 136px;
+                    .e-mail {
+                        background-color: #ffffff;
                         width: 100%;
+                        margin-bottom: 16px;
+                        border-radius: unset;
+                        border: none;
+                        cursor: auto;
 
-                        .heading {
-                            font-size: 20px;
-                            line-height: 114.5%;
-                            color: $primary-text-color;
-                            margin-bottom: 12px;
-                        }
-
-                        .links {
-                            max-width: 111px;
+                        .placeholder {
                             width: 100%;
-                            font-family: lato;
-                            font-size: 16px;
-                            line-height: 200%;
-
-                            a {
-                                color: $quaternary-text-color;
-                            }
-
-                        }
-                    }
-
-                    .appointment {
-                        max-width: 326px;
-                        width: 100%;
-
-                        .text {
-                            max-width: 325px;
-                            width: 100%;
-                            margin-bottom: 16px;
-
-                            .heading {
-                                max-width: 227px;
-                                width: 100%;
-                                font-size: 20px;
-                                line-height: 114.5%;
-                                color: $primary-text-color;
-                                margin-bottom: 16px;
-                            }
-
-                            .appointment-text {
-                                font-size: 16px;
-                                line-height: 142%;
-                                color: $quaternary-text-color;
-                                font-family: lato;
-                            }
-                        }
-
-                        .e-mail {
-                            background-color: #ffffff;
-                            width: 100%;
-                            margin-bottom: 16px;
+                            padding: 17px 25px;
+                            color: #b9b9b9;
                             border-radius: unset;
                             border: none;
                             cursor: auto;
-
-                            .placeholder {
-                                width: 100%;
-                                padding: 17px 25px;
-                                color: #b9b9b9;
-                                border-radius: unset;
-                                border: none;
-                                cursor: auto;
-                            }
                         }
                     }
                 }
             }
-
-        }
-
-        .copyright {
-            margin-top: 20px;
-            font-size: 16px;
-            font-family: lato;
-            line-height: 200%;
-            color: $quaternary-text-color;
         }
     }
+
+    .copyright {
+        margin-top: 20px;
+        font-size: 16px;
+        font-family: lato;
+        line-height: 200%;
+        color: $quaternary-text-color;
+    }
 }
+
 
 /* footer end */
