@@ -220,33 +220,6 @@ img {
 }
 .background-img-1 .section-1-txt {
   position: absolute;
-  max-width: 583px;
-  width: 100%;
-  max-height: 372.85px;
-  height: 100%;
-  margin-right: auto;
-  margin-left: 10%;
-}
-@media (min-width: 705px) and (max-width: 938px) {
-  .background-img-1 .section-1-txt {
-    max-width: 520px;
-    max-height: 280px;
-    margin-left: 5%;
-  }
-}
-@media (min-width: 530px) and (max-width: 704px) {
-  .background-img-1 .section-1-txt {
-    max-width: 480px;
-    max-height: 240px;
-    margin-left: 1.5%;
-  }
-}
-@media (min-width: 200px) and (max-width: 530px) {
-  .background-img-1 .section-1-txt {
-    max-width: 400px;
-    max-height: 180px;
-    margin-left: 0%;
-  }
 }
 .background-img-1 .section-1-txt .sub-text {
   background-color: #0FE3AF;
@@ -423,12 +396,12 @@ img {
   font-size: 30px;
 }
 .section-2 .vertical-gap {
-  row-gap: 1.25rem;
+  row-gap: 1.15rem;
   max-width: 1200px;
   width: 100%;
 }
 .section-2 .vertical-gap .card-gap {
-  row-gap: 1.25rem;
+  gap: 1.15rem;
 }
 .section-2 .vertical-gap .card-gap .card-height {
   max-height: 304.9px;
@@ -472,11 +445,24 @@ img {
   margin-bottom: 11px;
   color: #545454;
 }
+.section-2 .vertical-gap .card-gap .card-height img {
+  width: 100%;
+}
 .section-2 .vertical-gap .card-gap .card-without-img {
   max-width: 286px;
 }
+@media (max-width: 1025px) {
+  .section-2 .vertical-gap .card-gap .card-without-img {
+    max-width: unset;
+  }
+}
 .section-2 .vertical-gap .card-gap .card-with-img {
   max-width: 590px;
+}
+@media (max-width: 1025px) {
+  .section-2 .vertical-gap .card-gap .card-with-img {
+    max-width: unset;
+  }
 }
 
 /* section 2 end  */
@@ -487,15 +473,31 @@ img {
   margin-bottom: 99px;
   height: 100%;
 }
+@media (max-width: 993px) {
+  .background-img-2 {
+    justify-content: flex-end !important;
+  }
+}
 .background-img-2 img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.background-img-2 .section-3-txt {
+.background-img-2 .content {
   position: absolute;
-  right: 10%;
+}
+@media (max-width: 475px) {
+  .background-img-2 .content {
+    padding: 0 5px;
+  }
+}
+@media (max-width: 350px) {
+  .background-img-2 .content {
+    padding: 0 2px;
+  }
+}
+.background-img-2 .content .section-3-txt {
   margin-left: auto;
   background-color: #ffffff;
   max-width: 548px;
@@ -503,92 +505,76 @@ img {
   padding: 52px 0;
 }
 @media (min-width: 906px) and (max-width: 1200px) {
-  .background-img-2 .section-3-txt {
-    max-width: 655px;
+  .background-img-2 .content .section-3-txt {
+    max-width: 495px;
     padding: 24px 0;
-    right: 8%;
-  }
-}
-@media (min-width: 906px) and (max-width: 1060px) {
-  .background-img-2 .section-3-txt {
-    right: 5%;
   }
 }
 @media (min-width: 735px) and (max-width: 906px) {
-  .background-img-2 .section-3-txt {
+  .background-img-2 .content .section-3-txt {
     max-width: 420px;
     padding: 9px;
-    right: 3%;
-  }
-}
-@media (min-width: 735px) and (max-width: 906px) {
-  .background-img-2 .section-3-txt {
-    right: 2%;
   }
 }
 @media (min-width: 655px) and (max-width: 735px) {
-  .background-img-2 .section-3-txt {
+  .background-img-2 .content .section-3-txt {
     max-width: 350px;
     padding: 7px;
-    right: 2%;
   }
 }
 @media (min-width: 510px) and (max-width: 655px) {
-  .background-img-2 .section-3-txt {
+  .background-img-2 .content .section-3-txt {
     max-width: 300px;
     padding: 5px;
-    right: 1.5%;
   }
 }
 @media (min-width: 415px) and (max-width: 510px) {
-  .background-img-2 .section-3-txt {
+  .background-img-2 .content .section-3-txt {
     max-width: 250px;
     padding: 3px;
-    right: 1%;
   }
 }
 @media (min-width: 200px) and (max-width: 415px) {
-  .background-img-2 .section-3-txt {
+  .background-img-2 .content .section-3-txt {
     max-width: 200px;
     padding: 2px;
-    right: 0;
   }
 }
-.background-img-2 .section-3-txt .about-us {
+.background-img-2 .content .section-3-txt .about-us {
   max-width: 460px;
   width: 100%;
 }
-.background-img-2 .section-3-txt .about-us .title {
+.background-img-2 .content .section-3-txt .about-us .title {
   max-width: 530px;
   width: 100%;
   margin-bottom: 30px;
 }
 @media (min-width: 906px) and (max-width: 1060px) {
-  .background-img-2 .section-3-txt .about-us .title {
+  .background-img-2 .content .section-3-txt .about-us .title {
     margin-bottom: 20px;
   }
 }
 @media (min-width: 735px) and (max-width: 906px) {
-  .background-img-2 .section-3-txt .about-us .title {
+  .background-img-2 .content .section-3-txt .about-us .title {
     margin-bottom: 15px;
   }
 }
 @media (min-width: 655px) and (max-width: 735px) {
-  .background-img-2 .section-3-txt .about-us .title {
+  .background-img-2 .content .section-3-txt .about-us .title {
     margin-bottom: 10px;
   }
 }
 @media (min-width: 510px) and (max-width: 655px) {
-  .background-img-2 .section-3-txt .about-us .title {
+  .background-img-2 .content .section-3-txt .about-us .title {
     margin-bottom: 8px;
   }
 }
 @media (min-width: 300px) and (max-width: 510px) {
-  .background-img-2 .section-3-txt .about-us .title {
+  .background-img-2 .content .section-3-txt .about-us .title {
     margin-bottom: 5px;
   }
 }
-.background-img-2 .section-3-txt .about-us .title .sub-text {
+.background-img-2 .content .section-3-txt .about-us .title .sub-text {
   max-width: 141px;
   width: 100%;
   font-size: 14px;
@@ -600,35 +586,35 @@ img {
   color: #1C1C1C;
 }
 @media (min-width: 906px) and (max-width: 1060px) {
-  .background-img-2 .section-3-txt .about-us .title .sub-text {
+  .background-img-2 .content .section-3-txt .about-us .title .sub-text {
     font-size: 14px;
     line-height: 132%;
     margin-bottom: 10px;
   }
 }
 @media (min-width: 735px) and (max-width: 906px) {
-  .background-img-2 .section-3-txt .about-us .title .sub-text {
+  .background-img-2 .content .section-3-txt .about-us .title .sub-text {
     font-size: 14px;
     line-height: 122%;
     margin-bottom: 8px;
   }
 }
 @media (min-width: 655px) and (max-width: 735px) {
-  .background-img-2 .section-3-txt .about-us .title .sub-text {
+  .background-img-2 .content .section-3-txt .about-us .title .sub-text {
     font-size: 14px;
     line-height: 112%;
     margin-bottom: 5px;
   }
 }
 @media (min-width: 510px) and (max-width: 655px) {
-  .background-img-2 .section-3-txt .about-us .title .sub-text {
+  .background-img-2 .content .section-3-txt .about-us .title .sub-text {
     font-size: 12px;
     line-height: 105%;
     margin-bottom: 3px;
   }
 }
 @media (min-width: 415px) and (max-width: 510px) {
-  .background-img-2 .section-3-txt .about-us .title .sub-text {
+  .background-img-2 .content .section-3-txt .about-us .title .sub-text {
     font-size: 10px;
     line-height: 105%;
     margin-bottom: 3px;
@@ -636,14 +622,14 @@ img {
   }
 }
 @media (min-width: 200px) and (max-width: 415px) {
-  .background-img-2 .section-3-txt .about-us .title .sub-text {
+  .background-img-2 .content .section-3-txt .about-us .title .sub-text {
     font-size: 8px;
     line-height: 100%;
     margin-bottom: 3px;
     letter-spacing: 3.5px;
   }
 }
-.background-img-2 .section-3-txt .about-us .title div {
+.background-img-2 .content .section-3-txt .about-us .title div {
   max-width: 435px;
   width: 100%;
   line-height: 130%;
@@ -652,62 +638,62 @@ img {
   margin-bottom: 23px;
 }
 @media (min-width: 906px) and (max-width: 1060px) {
-  .background-img-2 .section-3-txt .about-us .title div {
+  .background-img-2 .content .section-3-txt .about-us .title div {
     font-size: 25px;
     line-height: 120%;
     margin-bottom: 10px;
   }
 }
 @media (min-width: 735px) and (max-width: 906px) {
-  .background-img-2 .section-3-txt .about-us .title div {
+  .background-img-2 .content .section-3-txt .about-us .title div {
     font-size: 23px;
     line-height: 115%;
     margin-bottom: 8px;
   }
 }
 @media (min-width: 655px) and (max-width: 735px) {
-  .background-img-2 .section-3-txt .about-us .title div {
+  .background-img-2 .content .section-3-txt .about-us .title div {
     font-size: 20px;
     line-height: 110%;
     margin-bottom: 5px;
   }
 }
 @media (min-width: 510px) and (max-width: 655px) {
-  .background-img-2 .section-3-txt .about-us .title div {
+  .background-img-2 .content .section-3-txt .about-us .title div {
     font-size: 18px;
     line-height: 105%;
     margin-bottom: 3px;
   }
 }
 @media (min-width: 300px) and (max-width: 510px) {
-  .background-img-2 .section-3-txt .about-us .title div {
+  .background-img-2 .content .section-3-txt .about-us .title div {
     font-size: 15px;
     line-height: 105%;
     margin-bottom: 3px;
   }
 }
 @media (min-width: 385px) and (max-width: 415px) {
-  .background-img-2 .section-3-txt .about-us .title div {
+  .background-img-2 .content .section-3-txt .about-us .title div {
     font-size: 12px;
     line-height: 105%;
     margin-bottom: 3px;
   }
 }
 @media (min-width: 340px) and (max-width: 385px) {
-  .background-img-2 .section-3-txt .about-us .title div {
+  .background-img-2 .content .section-3-txt .about-us .title div {
     font-size: 10px;
     line-height: 100%;
     margin-bottom: 3px;
   }
 }
 @media (min-width: 200px) and (max-width: 340px) {
-  .background-img-2 .section-3-txt .about-us .title div {
+  .background-img-2 .content .section-3-txt .about-us .title div {
     font-size: 8px;
     line-height: 100%;
     margin-bottom: 3px;
   }
 }
-.background-img-2 .section-3-txt .about-us .title .title-text {
+.background-img-2 .content .section-3-txt .about-us .title .title-text {
   max-width: -moz-fit-content;
   max-width: fit-content;
   line-height: 142%;
@@ -716,110 +702,110 @@ img {
   font-family: lato;
 }
 @media (min-width: 906px) and (max-width: 1060px) {
-  .background-img-2 .section-3-txt .about-us .title .title-text {
+  .background-img-2 .content .section-3-txt .about-us .title .title-text {
     font-size: 16px;
     line-height: 132%;
   }
 }
 @media (min-width: 735px) and (max-width: 906px) {
-  .background-img-2 .section-3-txt .about-us .title .title-text {
+  .background-img-2 .content .section-3-txt .about-us .title .title-text {
     font-size: 14px;
     line-height: 122%;
   }
 }
 @media (min-width: 655px) and (max-width: 735px) {
-  .background-img-2 .section-3-txt .about-us .title .title-text {
+  .background-img-2 .content .section-3-txt .about-us .title .title-text {
     font-size: 12px;
     line-height: 112%;
   }
 }
 @media (min-width: 510px) and (max-width: 655px) {
-  .background-img-2 .section-3-txt .about-us .title .title-text {
+  .background-img-2 .content .section-3-txt .about-us .title .title-text {
     font-size: 10px;
     line-height: 105%;
   }
 }
 @media (min-width: 375px) and (max-width: 510px) {
-  .background-img-2 .section-3-txt .about-us .title .title-text {
+  .background-img-2 .content .section-3-txt .about-us .title .title-text {
     font-size: 8px;
     line-height: 102%;
   }
 }
 @media (min-width: 200px) and (max-width: 375px) {
-  .background-img-2 .section-3-txt .about-us .title .title-text {
+  .background-img-2 .content .section-3-txt .about-us .title .title-text {
     font-size: 5px;
     line-height: 102%;
   }
 }
-.background-img-2 .section-3-txt .about-us .about-speciality-services {
+.background-img-2 .content .section-3-txt .about-us .about-speciality-services {
   max-width: 409px;
   width: 100%;
   margin-bottom: 30px;
 }
 @media (min-width: 906px) and (max-width: 1060px) {
-  .background-img-2 .section-3-txt .about-us .about-speciality-services {
+  .background-img-2 .content .section-3-txt .about-us .about-speciality-services {
     margin-bottom: 20px;
   }
 }
 @media (min-width: 735px) and (max-width: 906px) {
-  .background-img-2 .section-3-txt .about-us .about-speciality-services {
+  .background-img-2 .content .section-3-txt .about-us .about-speciality-services {
     margin-bottom: 15px;
   }
 }
 @media (min-width: 655px) and (max-width: 735px) {
-  .background-img-2 .section-3-txt .about-us .about-speciality-services {
+  .background-img-2 .content .section-3-txt .about-us .about-speciality-services {
     margin-bottom: 10px;
   }
 }
 @media (min-width: 510px) and (max-width: 655px) {
-  .background-img-2 .section-3-txt .about-us .about-speciality-services {
+  .background-img-2 .content .section-3-txt .about-us .about-speciality-services {
     margin-bottom: 8px;
   }
 }
 @media (min-width: 200px) and (max-width: 510px) {
-  .background-img-2 .section-3-txt .about-us .about-speciality-services {
+  .background-img-2 .content .section-3-txt .about-us .about-speciality-services {
     margin-bottom: 5px;
   }
 }
-.background-img-2 .section-3-txt .about-us .about-speciality-services .speciality {
+.background-img-2 .content .section-3-txt .about-us .about-speciality-services .speciality {
   max-width: 195px;
   width: 100%;
 }
 @media (min-width: 510px) and (max-width: 655px) {
-  .background-img-2 .section-3-txt .about-us .about-speciality-services .speciality {
+  .background-img-2 .content .section-3-txt .about-us .about-speciality-services .speciality {
     max-width: 160px;
   }
 }
 @media (min-width: 300px) and (max-width: 510px) {
-  .background-img-2 .section-3-txt .about-us .about-speciality-services .speciality {
+  .background-img-2 .content .section-3-txt .about-us .about-speciality-services .speciality {
     max-width: 155px;
   }
 }
 @media (min-width: 735px) and (max-width: 906px) {
-  .background-img-2 .section-3-txt .about-us .about-speciality-services .speciality svg {
+  .background-img-2 .content .section-3-txt .about-us .about-speciality-services .speciality svg {
     width: 50px;
     height: 50px;
   }
 }
 @media (min-width: 655px) and (max-width: 735px) {
-  .background-img-2 .section-3-txt .about-us .about-speciality-services .speciality svg {
+  .background-img-2 .content .section-3-txt .about-us .about-speciality-services .speciality svg {
     width: 40px;
     height: 40px;
   }
 }
 @media (min-width: 510px) and (max-width: 655px) {
-  .background-img-2 .section-3-txt .about-us .about-speciality-services .speciality svg {
+  .background-img-2 .content .section-3-txt .about-us .about-speciality-services .speciality svg {
     width: 30px;
     height: 30px;
   }
 }
 @media (min-width: 200px) and (max-width: 510px) {
-  .background-img-2 .section-3-txt .about-us .about-speciality-services .speciality svg {
+  .background-img-2 .content .section-3-txt .about-us .about-speciality-services .speciality svg {
     width: 25px;
     height: 25px;
   }
 }
-.background-img-2 .section-3-txt .about-us .about-speciality-services .speciality div {
+.background-img-2 .content .section-3-txt .about-us .about-speciality-services .speciality div {
   max-width: 121px;
   width: 100%;
   line-height: 142%;
@@ -827,73 +813,73 @@ img {
   font-family: lato;
 }
 @media (min-width: 906px) and (max-width: 1060px) {
-  .background-img-2 .section-3-txt .about-us .about-speciality-services .speciality div {
+  .background-img-2 .content .section-3-txt .about-us .about-speciality-services .speciality div {
     line-height: 132%;
   }
 }
 @media (min-width: 735px) and (max-width: 906px) {
-  .background-img-2 .section-3-txt .about-us .about-speciality-services .speciality div {
+  .background-img-2 .content .section-3-txt .about-us .about-speciality-services .speciality div {
     font-size: 14px;
     line-height: 122%;
   }
 }
 @media (min-width: 655px) and (max-width: 735px) {
-  .background-img-2 .section-3-txt .about-us .about-speciality-services .speciality div {
+  .background-img-2 .content .section-3-txt .about-us .about-speciality-services .speciality div {
     font-size: 12px;
     line-height: 112%;
   }
 }
 @media (min-width: 510px) and (max-width: 655px) {
-  .background-img-2 .section-3-txt .about-us .about-speciality-services .speciality div {
+  .background-img-2 .content .section-3-txt .about-us .about-speciality-services .speciality div {
     font-size: 10px;
     line-height: 102%;
   }
 }
 @media (min-width: 200px) and (max-width: 510px) {
-  .background-img-2 .section-3-txt .about-us .about-speciality-services .speciality div {
+  .background-img-2 .content .section-3-txt .about-us .about-speciality-services .speciality div {
     font-size: 8px;
     line-height: 102%;
   }
 }
-.background-img-2 .section-3-txt .about-us .about-speciality-services .services {
+.background-img-2 .content .section-3-txt .about-us .about-speciality-services .services {
   max-width: 190px;
   width: 100%;
 }
 @media (min-width: 510px) and (max-width: 655px) {
-  .background-img-2 .section-3-txt .about-us .about-speciality-services .services {
+  .background-img-2 .content .section-3-txt .about-us .about-speciality-services .services {
     max-width: 155px;
   }
 }
 @media (min-width: 300px) and (max-width: 510px) {
-  .background-img-2 .section-3-txt .about-us .about-speciality-services .services {
+  .background-img-2 .content .section-3-txt .about-us .about-speciality-services .services {
     max-width: 150px;
   }
 }
 @media (min-width: 735px) and (max-width: 906px) {
-  .background-img-2 .section-3-txt .about-us .about-speciality-services .services svg {
+  .background-img-2 .content .section-3-txt .about-us .about-speciality-services .services svg {
     width: 50px;
     height: 50px;
   }
 }
 @media (min-width: 655px) and (max-width: 735px) {
-  .background-img-2 .section-3-txt .about-us .about-speciality-services .services svg {
+  .background-img-2 .content .section-3-txt .about-us .about-speciality-services .services svg {
     width: 40px;
     height: 40px;
   }
 }
 @media (min-width: 510px) and (max-width: 655px) {
-  .background-img-2 .section-3-txt .about-us .about-speciality-services .services svg {
+  .background-img-2 .content .section-3-txt .about-us .about-speciality-services .services svg {
     width: 30px;
     height: 30px;
   }
 }
 @media (min-width: 200px) and (max-width: 510px) {
-  .background-img-2 .section-3-txt .about-us .about-speciality-services .services svg {
+  .background-img-2 .content .section-3-txt .about-us .about-speciality-services .services svg {
     width: 25px;
     height: 25px;
   }
 }
-.background-img-2 .section-3-txt .about-us .about-speciality-services .services div {
+.background-img-2 .content .section-3-txt .about-us .about-speciality-services .services div {
   max-width: 117px;
   width: 100%;
   line-height: 142%;
@@ -901,36 +887,36 @@ img {
   font-family: lato;
 }
 @media (min-width: 906px) and (max-width: 1060px) {
-  .background-img-2 .section-3-txt .about-us .about-speciality-services .services div {
+  .background-img-2 .content .section-3-txt .about-us .about-speciality-services .services div {
     line-height: 132%;
   }
 }
 @media (min-width: 735px) and (max-width: 906px) {
-  .background-img-2 .section-3-txt .about-us .about-speciality-services .services div {
+  .background-img-2 .content .section-3-txt .about-us .about-speciality-services .services div {
     font-size: 14px;
     line-height: 122%;
   }
 }
 @media (min-width: 655px) and (max-width: 735px) {
-  .background-img-2 .section-3-txt .about-us .about-speciality-services .services div {
+  .background-img-2 .content .section-3-txt .about-us .about-speciality-services .services div {
     font-size: 12px;
     line-height: 112%;
   }
 }
 @media (min-width: 510px) and (max-width: 655px) {
-  .background-img-2 .section-3-txt .about-us .about-speciality-services .services div {
+  .background-img-2 .content .section-3-txt .about-us .about-speciality-services .services div {
     font-size: 10px;
     line-height: 102%;
   }
 }
 @media (min-width: 200px) and (max-width: 510px) {
-  .background-img-2 .section-3-txt .about-us .about-speciality-services .services div {
+  .background-img-2 .content .section-3-txt .about-us .about-speciality-services .services div {
     font-size: 8px;
     line-height: 102%;
   }
 }
 @media (min-width: 735px) and (max-width: 906px) {
-  .background-img-2 .section-3-txt .about-us .bg-btn-2 {
+  .background-img-2 .content .section-3-txt .about-us .bg-btn-2 {
     height: 50px;
     width: 165px;
     font-size: 14px;
@@ -938,7 +924,7 @@ img {
   }
 }
 @media (min-width: 655px) and (max-width: 735px) {
-  .background-img-2 .section-3-txt .about-us .bg-btn-2 {
+  .background-img-2 .content .section-3-txt .about-us .bg-btn-2 {
     height: 40px;
     width: 155px;
     font-size: 14px;
@@ -946,7 +932,7 @@ img {
   }
 }
 @media (min-width: 510px) and (max-width: 655px) {
-  .background-img-2 .section-3-txt .about-us .bg-btn-2 {
+  .background-img-2 .content .section-3-txt .about-us .bg-btn-2 {
     height: 30px;
     width: 135px;
     font-size: 12px;
@@ -954,7 +940,7 @@ img {
   }
 }
 @media (min-width: 200px) and (max-width: 510px) {
-  .background-img-2 .section-3-txt .about-us .bg-btn-2 {
+  .background-img-2 .content .section-3-txt .about-us .bg-btn-2 {
     height: 20px;
     width: 115px;
     font-size: 10px;
@@ -967,68 +953,14 @@ img {
 .section-4 {
   margin-bottom: 80px;
 }
-.section-4 .client-logo {
+.section-4 .content {
   max-width: 1200px;
   width: 100%;
 }
-.section-4 .client-logo .logo-1 {
-  max-width: 195px;
-  width: 100%;
-}
-.section-4 .client-logo .logo-1 div {
-  max-width: 146px;
-  width: 100%;
-  font-size: 25px;
-  line-height: 130%;
-  color: #0152A8;
-}
-.section-4 .client-logo .logo-2 {
-  max-width: 176px;
-  width: 100%;
-}
-.section-4 .client-logo .logo-2 div {
-  font-family: MuseoModerno;
-  max-width: 137px;
-  width: 100%;
-  font-size: 25px;
-  line-height: 130%;
-  color: #0152A8;
-}
-.section-4 .client-logo .logo-3 {
-  max-width: 162px;
-  width: 100%;
-}
-.section-4 .client-logo .logo-3 div {
-  font-family: Merienda;
-  max-width: 121px;
-  width: 100%;
-  font-size: 25px;
-  line-height: 130%;
-  color: #0152A8;
-}
-.section-4 .client-logo .logo-4 {
-  max-width: 215px;
-  width: 100%;
-}
-.section-4 .client-logo .logo-4 div {
-  font-family: JetBrains Mono;
-  max-width: 165px;
-  width: 100%;
-  font-size: 25px;
-  line-height: 130%;
-  color: #0152A8;
-}
-.section-4 .client-logo .logo-5 {
-  max-width: 195px;
-  width: 100%;
-}
-.section-4 .client-logo .logo-5 div {
-  font-family: IM FELL French Canon SC;
-  max-width: 150px;
-  width: 100%;
-  font-size: 25px;
-  line-height: 130%;
-  color: #0152A8;
+@media (max-width: 993px) {
+  .section-4 .content {
+    justify-content: center !important;
+  }
 }
 
 /* section 4 end */
@@ -1355,6 +1287,7 @@ img {
   background-color: #004a99;
   max-width: 361px;
   width: 100%;
+  padding: 0 12px;
 }
 .section-8 .content .team .team-details .first-member .member-image {
   padding-top: 30px;
