@@ -21,7 +21,7 @@
 .btn.btn-height-1 {
   height: 60px;
 }
-@media (min-width: 426px) and (max-width: 769px) {
+@media (min-width: 200px) and (max-width: 769px) {
   .btn.btn-height-1 {
     height: 50px;
   }
@@ -29,7 +29,7 @@
 .btn.btn-height-2 {
   height: 61px;
 }
-@media (min-width: 426px) and (max-width: 769px) {
+@media (min-width: 200px) and (max-width: 769px) {
   .btn.btn-height-2 {
     height: 51px;
   }
@@ -37,7 +37,7 @@
 .btn.btn-width-1 {
   width: 188px;
 }
-@media (min-width: 426px) and (max-width: 769px) {
+@media (min-width: 200px) and (max-width: 769px) {
   .btn.btn-width-1 {
     width: 180px;
   }
@@ -45,7 +45,7 @@
 .btn.btn-width-2 {
   width: 171px;
 }
-@media (min-width: 426px) and (max-width: 769px) {
+@media (min-width: 200px) and (max-width: 769px) {
   .btn.btn-width-2 {
     width: 165px;
   }
@@ -53,7 +53,7 @@
 .btn.btn-width-3 {
   width: 197px;
 }
-@media (min-width: 426px) and (max-width: 769px) {
+@media (min-width: 200px) and (max-width: 769px) {
   .btn.btn-width-3 {
     width: 185px;
   }
@@ -61,7 +61,7 @@
 .btn.btn-width-4 {
   width: 138px;
 }
-@media (min-width: 426px) and (max-width: 769px) {
+@media (min-width: 200px) and (max-width: 769px) {
   .btn.btn-width-4 {
     width: 130px;
   }
@@ -70,7 +70,7 @@
   font-size: 18px;
   line-height: 160%;
 }
-@media (min-width: 426px) and (max-width: 769px) {
+@media (min-width: 200px) and (max-width: 769px) {
   .btn.btn-font-1 {
     font-size: 16px;
     line-height: 148%;
@@ -80,7 +80,7 @@
   font-size: 16px;
   line-height: 160%;
 }
-@media (min-width: 426px) and (max-width: 769px) {
+@media (min-width: 200px) and (max-width: 769px) {
   .btn.btn-font-2 {
     font-size: 14px;
     line-height: 148%;
@@ -280,8 +280,9 @@ img {
 }
 @media (min-width: 705px) and (max-width: 938px) {
   .background-img-1 .section-1-txt .title div {
-    font-size: 40px !important;
+    font-size: 35px !important;
     line-height: 104.5% !important;
+    margin-bottom: 18px;
   }
 }
 @media (min-width: 530px) and (max-width: 704px) {
@@ -294,10 +295,10 @@ img {
 }
 @media (min-width: 200px) and (max-width: 530px) {
   .background-img-1 .section-1-txt .title div {
-    font-size: 20px !important;
+    font-size: 15px !important;
     line-height: 94.5% !important;
     max-width: 350px;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
   }
 }
 @media (min-width: 200px) and (max-width: 355px) {
@@ -404,9 +405,13 @@ img {
   gap: 1.15rem;
 }
 .section-2 .vertical-gap .card-gap .card-height {
-  max-height: 304.9px;
-  height: 100%;
+  min-height: 304.9px;
   border-radius: unset;
+}
+@media (max-width: 767px) {
+  .section-2 .vertical-gap .card-gap .card-height {
+    flex-direction: column-reverse !important;
+  }
 }
 .section-2 .vertical-gap .card-gap .card-height .card-body {
   background-color: #f1f1f1;
@@ -456,12 +461,38 @@ img {
     max-width: unset;
   }
 }
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .section-2 .vertical-gap .card-gap .card-without-img {
+    width: 23.8%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .section-2 .vertical-gap .card-gap .card-without-img {
+    width: 49%;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .section-2 .vertical-gap .card-gap .card-without-img {
+    width: 48.6%;
+  }
+}
+@media (max-width: 767px) {
+  .section-2 .vertical-gap .card-gap .card-without-img {
+    width: 100%;
+    min-height: 304.9px;
+  }
+}
 .section-2 .vertical-gap .card-gap .card-with-img {
   max-width: 590px;
 }
 @media (max-width: 1025px) {
   .section-2 .vertical-gap .card-gap .card-with-img {
     max-width: unset;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .section-2 .vertical-gap .card-gap .card-with-img {
+    width: 49%;
   }
 }
 
@@ -556,7 +587,7 @@ img {
 }
 @media (min-width: 735px) and (max-width: 906px) {
   .background-img-2 .content .section-3-txt .about-us .title {
-    margin-bottom: 15px;
+    margin-bottom: 13px;
   }
 }
 @media (min-width: 655px) and (max-width: 735px) {
@@ -594,14 +625,14 @@ img {
 }
 @media (min-width: 735px) and (max-width: 906px) {
   .background-img-2 .content .section-3-txt .about-us .title .sub-text {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 122%;
     margin-bottom: 8px;
   }
 }
 @media (min-width: 655px) and (max-width: 735px) {
   .background-img-2 .content .section-3-txt .about-us .title .sub-text {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 112%;
     margin-bottom: 5px;
   }
@@ -646,7 +677,7 @@ img {
 }
 @media (min-width: 735px) and (max-width: 906px) {
   .background-img-2 .content .section-3-txt .about-us .title div {
-    font-size: 23px;
+    font-size: 21px;
     line-height: 115%;
     margin-bottom: 8px;
   }
@@ -709,8 +740,8 @@ img {
 }
 @media (min-width: 735px) and (max-width: 906px) {
   .background-img-2 .content .section-3-txt .about-us .title .title-text {
-    font-size: 14px;
-    line-height: 122%;
+    font-size: 13px;
+    line-height: 118%;
   }
 }
 @media (min-width: 655px) and (max-width: 735px) {
@@ -749,7 +780,7 @@ img {
 }
 @media (min-width: 735px) and (max-width: 906px) {
   .background-img-2 .content .section-3-txt .about-us .about-speciality-services {
-    margin-bottom: 15px;
+    margin-bottom: 13px;
   }
 }
 @media (min-width: 655px) and (max-width: 735px) {
@@ -975,7 +1006,7 @@ img {
 @media (max-width: 992px) {
   .section-5 .section-5-txt {
     flex-direction: column-reverse;
-    row-gap: 20px;
+    row-gap: 40px;
   }
 }
 .section-5 .section-5-txt .about-us {
@@ -1144,6 +1175,11 @@ img {
   border-radius: unset;
   border: none;
 }
+@media (min-width: 1000px) and (max-width: 1400px) {
+  .section-7 .vertical-gap .card-gap .card-size {
+    max-width: 478px;
+  }
+}
 .section-7 .vertical-gap .card-gap .card-size .review {
   max-width: 492px;
   width: 100%;
@@ -1244,14 +1280,22 @@ img {
   background-color: #0152A8;
   margin-bottom: 102px;
 }
-.section-8 .content {
-  max-width: 1213px;
-  width: 100%;
+@media (min-width: 1400px) {
+  .section-8 .content {
+    max-width: 1213px;
+    width: 100%;
+  }
 }
 .section-8 .content .team {
   margin-top: 147px;
   width: 100%;
   margin-bottom: 132px;
+}
+@media (max-width: 770px) {
+  .section-8 .content .team {
+    margin-top: 90px;
+    margin-bottom: 80px;
+  }
 }
 .section-8 .content .team .title {
   width: 100%;
@@ -1330,6 +1374,11 @@ img {
   width: 100%;
   margin-bottom: 147px;
 }
+@media (max-width: 770px) {
+  .section-8 .content .counter {
+    margin-bottom: 90px;
+  }
+}
 .section-8 .content .counter .line-container {
   max-width: 1200px;
   width: 100%;
@@ -1355,6 +1404,17 @@ img {
   max-width: -moz-fit-content;
   max-width: fit-content;
   width: 100%;
+}
+@media (min-width: 610px) and (max-width: 785px) {
+  .section-8 .content .counter .experience-briefing .experience {
+    max-width: unset;
+    width: 25%;
+  }
+}
+@media (max-width: 321px) {
+  .section-8 .content .counter .experience-briefing .experience {
+    max-width: unset;
+  }
 }
 .section-8 .content .counter .experience-briefing .experience .number {
   font-size: 50px;
@@ -1424,13 +1484,10 @@ img {
 .section-9 {
   margin-bottom: 225px;
 }
-.section-9 .blog {
-  max-width: 1200px;
-  width: 100%;
-}
-@media (max-width: 1200px) {
+@media (min-width: 1400px) {
   .section-9 .blog {
-    padding: 0 12px;
+    max-width: 1224px;
+    width: 100%;
   }
 }
 .section-9 .blog .heading {
@@ -1503,62 +1560,67 @@ img {
 /* section 9 end */
 /* footer */
 footer {
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
-footer section .background-image {
+footer .background-color {
   background-color: #E5F2EF;
   margin-bottom: 20px;
   min-height: 557px;
+  padding: 20px 0;
 }
-footer section .background-image .content {
-  max-width: 1328px;
-  width: 100%;
+footer .background-color .content {
   row-gap: 63px;
 }
-footer section .background-image .content .title {
+@media (min-width: 1400px) {
+  footer .background-color .content {
+    max-width: 1328px;
+    width: 100%;
+  }
+}
+footer .background-color .content .title {
   max-width: 1200px;
   width: 100%;
 }
-footer section .background-image .content .title .contact-details {
+footer .background-color .content .title .contact-details {
   max-width: 662px;
   width: 100%;
 }
-footer section .background-image .content .title .contact-details .call-container {
+footer .background-color .content .title .contact-details .call-container {
   max-width: 214px;
   width: 100%;
 }
-footer section .background-image .content .title .contact-details .call-container .call {
+footer .background-color .content .title .contact-details .call-container .call {
   color: #545454;
   width: 100%;
 }
-footer section .background-image .content .title .contact-details .mail-container {
+footer .background-color .content .title .contact-details .mail-container {
   max-width: 222px;
   width: 100%;
 }
-footer section .background-image .content .title .contact-details .mail-container .mail {
+footer .background-color .content .title .contact-details .mail-container .mail {
   color: #545454;
   width: 100%;
 }
-footer section .background-image .content .title .contact-details .follow {
+footer .background-color .content .title .contact-details .follow {
   max-width: 121px;
   width: 100%;
 }
-footer section .background-image .content .visit-links {
+footer .background-color .content .visit-links {
   max-width: 1200px;
   width: 100%;
 }
-footer section .background-image .content .visit-links .quotes {
+footer .background-color .content .visit-links .quotes {
   max-width: 370px;
   width: 100%;
   font-size: 30px;
   line-height: 141%;
   color: #1C1C1C;
 }
-footer section .background-image .content .explore {
+footer .background-color .content .explore {
   max-width: 91px;
   width: 100%;
 }
-footer section .background-image .content .explore .heading {
+footer .background-color .content .explore .heading {
   max-width: 78px;
   width: 100%;
   font-size: 20px;
@@ -1566,50 +1628,50 @@ footer section .background-image .content .explore .heading {
   color: #1C1C1C;
   margin-bottom: 14px;
 }
-footer section .background-image .content .explore .links {
+footer .background-color .content .explore .links {
   font-family: lato;
   font-size: 16px;
   line-height: 200%;
 }
-footer section .background-image .content .explore .links a {
+footer .background-color .content .explore .links a {
   color: #545454;
 }
-footer section .background-image .content .uitility {
+footer .background-color .content .uitility {
   max-width: 136px;
   width: 100%;
 }
 @media (max-width: 1046px) {
-  footer section .background-image .content .uitility {
+  footer .background-color .content .uitility {
     font-size: 18px !important;
     line-height: 104.5% !important;
   }
 }
-footer section .background-image .content .uitility .heading {
+footer .background-color .content .uitility .heading {
   font-size: 20px;
   line-height: 114.5%;
   color: #1C1C1C;
   margin-bottom: 12px;
 }
-footer section .background-image .content .uitility .links {
+footer .background-color .content .uitility .links {
   max-width: 111px;
   width: 100%;
   font-family: lato;
   font-size: 16px;
   line-height: 200%;
 }
-footer section .background-image .content .uitility .links a {
+footer .background-color .content .uitility .links a {
   color: #545454;
 }
-footer section .background-image .content .appointment {
+footer .background-color .content .appointment {
   max-width: 326px;
   width: 100%;
 }
-footer section .background-image .content .appointment .text {
+footer .background-color .content .appointment .text {
   max-width: 325px;
   width: 100%;
   margin-bottom: 16px;
 }
-footer section .background-image .content .appointment .text .heading {
+footer .background-color .content .appointment .text .heading {
   max-width: 227px;
   width: 100%;
   font-size: 20px;
@@ -1617,13 +1679,13 @@ footer section .background-image .content .appointment .text .heading {
   color: #1C1C1C;
   margin-bottom: 16px;
 }
-footer section .background-image .content .appointment .text .appointment-text {
+footer .background-color .content .appointment .text .appointment-text {
   font-size: 16px;
   line-height: 142%;
   color: #545454;
   font-family: lato;
 }
-footer section .background-image .content .appointment .e-mail {
+footer .background-color .content .appointment .e-mail {
   background-color: #ffffff;
   width: 100%;
   margin-bottom: 16px;
@@ -1631,7 +1693,7 @@ footer section .background-image .content .appointment .e-mail {
   border: none;
   cursor: auto;
 }
-footer section .background-image .content .appointment .e-mail .placeholder {
+footer .background-color .content .appointment .e-mail .placeholder {
   width: 100%;
   padding: 17px 25px;
   color: #b9b9b9;
