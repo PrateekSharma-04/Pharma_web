@@ -401,11 +401,17 @@ img {
   max-width: 1200px;
   width: 100%;
 }
+@media (max-width: 1200px) {
+  .section-2 .vertical-gap {
+    max-width: 800px;
+  }
+}
 .section-2 .vertical-gap .card-gap {
   gap: 1.15rem;
 }
 .section-2 .vertical-gap .card-gap .card-height {
   min-height: 304.9px;
+  height: 100%;
   border-radius: unset;
 }
 @media (max-width: 767px) {
@@ -468,12 +474,12 @@ img {
 }
 @media (min-width: 992px) and (max-width: 1200px) {
   .section-2 .vertical-gap .card-gap .card-without-img {
-    width: 49%;
+    width: 36%;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .section-2 .vertical-gap .card-gap .card-without-img {
-    width: 48.6%;
+    width: 41%;
   }
 }
 @media (max-width: 767px) {
@@ -484,11 +490,6 @@ img {
 }
 .section-2 .vertical-gap .card-gap .card-with-img {
   max-width: 590px;
-}
-@media (max-width: 1025px) {
-  .section-2 .vertical-gap .card-gap .card-with-img {
-    max-width: unset;
-  }
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
   .section-2 .vertical-gap .card-gap .card-with-img {
@@ -988,7 +989,7 @@ img {
   max-width: 1200px;
   width: 100%;
 }
-@media (max-width: 993px) {
+@media (max-width: 1200px) {
   .section-4 .content {
     justify-content: center !important;
   }
@@ -1096,6 +1097,11 @@ img {
 @media (max-width: 992px) {
   .section-5 .section-5-txt .about-us .title .title-text .title-text-2 {
     max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .section-5 .section-5-txt .about-us .title .title-text .title-text-2 br {
+    display: none;
   }
 }
 .section-5 .section-5-txt .about-us .excellence {
