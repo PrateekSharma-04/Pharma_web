@@ -79,6 +79,8 @@ img {
 
     @media(max-width: 537px) {
         height: fit-content;
+        padding-top: 12px;
+        padding-bottom: 12px;
     }
 
     @media (max-width : 576px) {
@@ -92,6 +94,20 @@ img {
     max-width: 450.97px;
     width: 100%;
     justify-content: space-between;
+
+    @media(max-width : 426px) {
+        display: block !important;
+    }
+
+    @media(max-width : 351px) {
+        font-size: 10px !important;
+    }
+
+    .call {
+        @media (max-width : 426px) {
+            margin-bottom: 5px;
+        }
+    }
 }
 
 .navbar-brand {
@@ -129,6 +145,10 @@ img {
 
 .marg {
     margin-top: 39px;
+
+    @media (max-width : 768px) {
+        margin-top: 20px;
+    }
 }
 
 /* header end  */
@@ -137,6 +157,10 @@ img {
 .background-img-1 {
     position: relative;
     margin-top: 31px;
+
+    @media (max-width : 768px) {
+        margin-top: 20px;
+    }
 
     img {
         width: 100%;
@@ -302,6 +326,11 @@ img {
     flex-direction: column;
     margin-bottom: 160px;
 
+    @media (max-width : 768px) {
+        margin-top: 80px;
+        margin-bottom: 90px;
+    }
+
     .heading {
         max-width: 406px;
         width: 100%;
@@ -347,6 +376,10 @@ img {
                     flex-direction: column-reverse !important;
                 }
 
+                @media(max-width : 426px) {
+                    min-height: 260px;
+                }
+
 
                 .card-body {
                     background-color: $review-bg-color;
@@ -370,26 +403,46 @@ img {
                     .icon-1 {
                         margin-top: 29px;
                         margin-bottom: 23px;
+
+                        @media(max-width : 426px) {
+                            margin-top: 20px;
+                        }
                     }
 
                     .icon-2 {
                         margin-top: 29px;
                         margin-bottom: 30px;
+
+                        @media(max-width : 426px) {
+                            margin-top: 20px;
+                        }
                     }
 
                     .icon-3 {
                         margin-top: 29px;
                         margin-bottom: 40px;
+
+                        @media(max-width : 426px) {
+                            margin-top: 20px;
+                        }
                     }
 
                     .icon-4 {
                         margin-top: 29px;
                         margin-bottom: 21px;
+
+                        @media(max-width : 426px) {
+                            margin-top: 20px;
+                        }
                     }
 
                     .icon-5 {
                         margin-top: 29px;
                         margin-bottom: 16px;
+
+                        @media(max-width : 426px) {
+                            margin-top: 20px;
+                        }
                     }
 
                     .card-text {
@@ -425,7 +478,11 @@ img {
 
                 @media (max-width : 767px) {
                     width: 100%;
-                    min-height: 304.9px;
+                }
+
+                @media(max-width : 426px) {
+                    min-height: 260px;
+                    height: 100%;
                 }
             }
 
@@ -440,12 +497,10 @@ img {
                     width: 49%;
                 }
             }
-
-
         }
-
     }
 }
+
 
 /* section 2 end  */
 
@@ -453,10 +508,12 @@ img {
 
 .background-img-2 {
     position: relative;
-    margin-top: 31px;
     margin-bottom: 99px;
-    // min-height: 711px;
     height: 100%;
+
+    @media (max-width : 768px) {
+        margin-bottom: 90px;
+    }
 
     @media(max-width : 993px) {
         justify-content: flex-end !important;
@@ -939,6 +996,10 @@ img {
 .section-5 {
     margin-bottom: 141px;
 
+    @media (max-width : 768px) {
+        margin-bottom: 90px;
+    }
+
     .section-5-txt {
         max-width: 1203px;
         width: 100%;
@@ -1036,8 +1097,8 @@ img {
                             max-width: 100%;
                         }
 
-                        @media(max-width : 768px) { 
-                            br{
+                        @media(max-width : 768px) {
+                            br {
                                 display: none;
                             }
                         }
@@ -1099,6 +1160,11 @@ img {
 .section-7 {
     margin-top: 150px;
     margin-bottom: 216px;
+
+    @media (max-width : 768px) {
+        margin-top: 90px;
+        margin-bottom: 90px;
+    }
 
     .heading {
         max-width: 497px;
@@ -1265,6 +1331,10 @@ img {
 .section-8 {
     background-color: $primary-color;
     margin-bottom: 102px;
+
+    @media (max-width : 768px) {
+        margin-bottom: 90px;
+    }
 
     .content {
 
@@ -1501,6 +1571,10 @@ img {
 
 .section-9 {
     margin-bottom: 225px;
+
+    @media (max-width : 768px) {
+        margin-bottom: 100px;
+    }
 
     .blog {
 

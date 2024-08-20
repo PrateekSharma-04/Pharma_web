@@ -158,6 +158,8 @@ img {
   .bg {
     height: -moz-fit-content;
     height: fit-content;
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
 }
 @media (max-width: 576px) {
@@ -170,6 +172,21 @@ img {
   max-width: 450.97px;
   width: 100%;
   justify-content: space-between;
+}
+@media (max-width: 426px) {
+  .contact {
+    display: block !important;
+  }
+}
+@media (max-width: 351px) {
+  .contact {
+    font-size: 10px !important;
+  }
+}
+@media (max-width: 426px) {
+  .contact .call {
+    margin-bottom: 5px;
+  }
 }
 
 .navbar-brand {
@@ -205,12 +222,22 @@ img {
 .marg {
   margin-top: 39px;
 }
+@media (max-width: 768px) {
+  .marg {
+    margin-top: 20px;
+  }
+}
 
 /* header end  */
 /* section 1 */
 .background-img-1 {
   position: relative;
   margin-top: 31px;
+}
+@media (max-width: 768px) {
+  .background-img-1 {
+    margin-top: 20px;
+  }
 }
 .background-img-1 img {
   width: 100%;
@@ -375,6 +402,12 @@ img {
   flex-direction: column;
   margin-bottom: 160px;
 }
+@media (max-width: 768px) {
+  .section-2 {
+    margin-top: 80px;
+    margin-bottom: 90px;
+  }
+}
 .section-2 .heading {
   max-width: 406px;
   width: 100%;
@@ -419,6 +452,11 @@ img {
     flex-direction: column-reverse !important;
   }
 }
+@media (max-width: 426px) {
+  .section-2 .vertical-gap .card-gap .card-height {
+    min-height: 260px;
+  }
+}
 .section-2 .vertical-gap .card-gap .card-height .card-body {
   background-color: #f1f1f1;
 }
@@ -435,21 +473,46 @@ img {
   margin-top: 29px;
   margin-bottom: 23px;
 }
+@media (max-width: 426px) {
+  .section-2 .vertical-gap .card-gap .card-height .card-body .icon-1 {
+    margin-top: 20px;
+  }
+}
 .section-2 .vertical-gap .card-gap .card-height .card-body .icon-2 {
   margin-top: 29px;
   margin-bottom: 30px;
+}
+@media (max-width: 426px) {
+  .section-2 .vertical-gap .card-gap .card-height .card-body .icon-2 {
+    margin-top: 20px;
+  }
 }
 .section-2 .vertical-gap .card-gap .card-height .card-body .icon-3 {
   margin-top: 29px;
   margin-bottom: 40px;
 }
+@media (max-width: 426px) {
+  .section-2 .vertical-gap .card-gap .card-height .card-body .icon-3 {
+    margin-top: 20px;
+  }
+}
 .section-2 .vertical-gap .card-gap .card-height .card-body .icon-4 {
   margin-top: 29px;
   margin-bottom: 21px;
 }
+@media (max-width: 426px) {
+  .section-2 .vertical-gap .card-gap .card-height .card-body .icon-4 {
+    margin-top: 20px;
+  }
+}
 .section-2 .vertical-gap .card-gap .card-height .card-body .icon-5 {
   margin-top: 29px;
   margin-bottom: 16px;
+}
+@media (max-width: 426px) {
+  .section-2 .vertical-gap .card-gap .card-height .card-body .icon-5 {
+    margin-top: 20px;
+  }
 }
 .section-2 .vertical-gap .card-gap .card-height .card-body .card-text {
   margin-top: 11px;
@@ -485,7 +548,12 @@ img {
 @media (max-width: 767px) {
   .section-2 .vertical-gap .card-gap .card-without-img {
     width: 100%;
-    min-height: 304.9px;
+  }
+}
+@media (max-width: 426px) {
+  .section-2 .vertical-gap .card-gap .card-without-img {
+    min-height: 260px;
+    height: 100%;
   }
 }
 .section-2 .vertical-gap .card-gap .card-with-img {
@@ -501,9 +569,13 @@ img {
 /* section 3 */
 .background-img-2 {
   position: relative;
-  margin-top: 31px;
   margin-bottom: 99px;
   height: 100%;
+}
+@media (max-width: 768px) {
+  .background-img-2 {
+    margin-bottom: 90px;
+  }
 }
 @media (max-width: 993px) {
   .background-img-2 {
@@ -1000,6 +1072,11 @@ img {
 .section-5 {
   margin-bottom: 141px;
 }
+@media (max-width: 768px) {
+  .section-5 {
+    margin-bottom: 90px;
+  }
+}
 .section-5 .section-5-txt {
   max-width: 1203px;
   width: 100%;
@@ -1146,6 +1223,12 @@ img {
   margin-top: 150px;
   margin-bottom: 216px;
 }
+@media (max-width: 768px) {
+  .section-7 {
+    margin-top: 90px;
+    margin-bottom: 90px;
+  }
+}
 .section-7 .heading {
   max-width: 497px;
   width: 100%;
@@ -1285,6 +1368,11 @@ img {
 .section-8 {
   background-color: #0152A8;
   margin-bottom: 102px;
+}
+@media (max-width: 768px) {
+  .section-8 {
+    margin-bottom: 90px;
+  }
 }
 @media (min-width: 1400px) {
   .section-8 .content {
@@ -1489,6 +1577,11 @@ img {
 /* section 9 */
 .section-9 {
   margin-bottom: 225px;
+}
+@media (max-width: 768px) {
+  .section-9 {
+    margin-bottom: 100px;
+  }
 }
 @media (min-width: 1400px) {
   .section-9 .blog {
