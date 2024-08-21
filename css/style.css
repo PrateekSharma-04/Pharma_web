@@ -1439,6 +1439,17 @@ img {
   margin-bottom: 13px;
   color: #ffffff;
 }
+@media (min-width: 321px) and (max-width: 376px) {
+  .section-8 .content .team .title .text .sub-text {
+    font-size: 12px !important;
+  }
+}
+@media (min-width: 200px) and (max-width: 321px) {
+  .section-8 .content .team .title .text .sub-text {
+    font-size: 12px !important;
+    letter-spacing: 4px;
+  }
+}
 .section-8 .content .team .title .text .sub-title {
   font-size: 30px;
   line-height: 130%;

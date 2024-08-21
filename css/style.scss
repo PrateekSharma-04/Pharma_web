@@ -1402,6 +1402,15 @@ img {
                         border: 0.5px solid #2b78ca;
                         margin-bottom: 13px;
                         color: #ffffff;
+
+                        @media(min-width : 321px) and (max-width : 376px) {
+                            font-size: 12px !important;
+                        }
+
+                        @media(min-width : 200px) and (max-width : 321px) {
+                            font-size: 12px !important;
+                            letter-spacing: 4px;
+                        }
                     }
 
                     .sub-title {
