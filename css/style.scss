@@ -532,11 +532,7 @@ img {
         // right: 10%;
 
         @media(max-width : 475px) {
-            padding: 0 5px;
-        }
-
-        @media(max-width : 350px) {
-            padding: 0 2px;
+            padding: 12px;
         }
 
         .section-3-txt {
@@ -583,15 +579,21 @@ img {
                 // right: 1.5%;
             }
 
-            @media(min-width : 415px) and (max-width : 510px) {
+            @media(min-width : 426px) and (max-width : 510px) {
                 max-width: 250px;
                 padding: 3px;
                 // right: 1%;
             }
 
-            @media(min-width : 200px) and (max-width : 415px) {
-                max-width: 200px;
-                padding: 2px;
+            @media(min-width : 321px) and (max-width : 426px) {
+                max-width: unset;
+                padding: 8px;
+                // right: 0;
+            }
+
+            @media(min-width : 200px) and (max-width : 321px) {
+                max-width: unset;
+                padding: 3px;
                 // right: 0;
             }
 
@@ -825,9 +827,14 @@ img {
                                 height: 30px;
                             }
 
-                            @media(min-width : 200px) and (max-width : 510px) {
+                            @media(min-width : 321px) and (max-width : 510px) {
                                 width: 25px;
                                 height: 25px;
+                            }
+
+                            @media(min-width : 200px) and (max-width : 321px) {
+                                width: 20px;
+                                height: 20px;
                             }
                         }
 
@@ -892,9 +899,14 @@ img {
                                 height: 30px;
                             }
 
-                            @media(min-width : 200px) and (max-width : 510px) {
+                            @media(min-width : 321px) and (max-width : 510px) {
                                 width: 25px;
                                 height: 25px;
+                            }
+
+                            @media(min-width : 200px) and (max-width : 321px) {
+                                width: 20px;
+                                height: 20px;
                             }
                         }
 
@@ -959,9 +971,27 @@ img {
                     }
                 }
 
-                @media(min-width : 200px) and (max-width : 510px) {
+                @media(min-width : 426px) and (max-width : 510px) {
                     .bg-btn-2 {
                         height: 20px;
+                        width: 115px;
+                        font-size: 10px;
+                        line-height: 118%;
+                    }
+                }
+
+                @media(min-width : 321px) and (max-width :426px) {
+                    .bg-btn-2 {
+                        height: 30px;
+                        width: 115px;
+                        font-size: 10px;
+                        line-height: 118%;
+                    }
+                }
+
+                @media(min-width : 200px) and (max-width :321px) {
+                    .bg-btn-2 {
+                        height:20px;
                         width: 115px;
                         font-size: 10px;
                         line-height: 118%;

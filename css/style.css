@@ -593,12 +593,7 @@ img {
 }
 @media (max-width: 475px) {
   .background-img-2 .content {
-    padding: 0 5px;
-  }
-}
-@media (max-width: 350px) {
-  .background-img-2 .content {
-    padding: 0 2px;
+    padding: 12px;
   }
 }
 .background-img-2 .content .section-3-txt {
@@ -632,16 +627,22 @@ img {
     padding: 5px;
   }
 }
-@media (min-width: 415px) and (max-width: 510px) {
+@media (min-width: 426px) and (max-width: 510px) {
   .background-img-2 .content .section-3-txt {
     max-width: 250px;
     padding: 3px;
   }
 }
-@media (min-width: 200px) and (max-width: 415px) {
+@media (min-width: 321px) and (max-width: 426px) {
   .background-img-2 .content .section-3-txt {
-    max-width: 200px;
-    padding: 2px;
+    max-width: unset;
+    padding: 8px;
+  }
+}
+@media (min-width: 200px) and (max-width: 321px) {
+  .background-img-2 .content .section-3-txt {
+    max-width: unset;
+    padding: 3px;
   }
 }
 .background-img-2 .content .section-3-txt .about-us {
@@ -903,10 +904,16 @@ img {
     height: 30px;
   }
 }
-@media (min-width: 200px) and (max-width: 510px) {
+@media (min-width: 321px) and (max-width: 510px) {
   .background-img-2 .content .section-3-txt .about-us .about-speciality-services .speciality svg {
     width: 25px;
     height: 25px;
+  }
+}
+@media (min-width: 200px) and (max-width: 321px) {
+  .background-img-2 .content .section-3-txt .about-us .about-speciality-services .speciality svg {
+    width: 20px;
+    height: 20px;
   }
 }
 .background-img-2 .content .section-3-txt .about-us .about-speciality-services .speciality div {
@@ -977,10 +984,16 @@ img {
     height: 30px;
   }
 }
-@media (min-width: 200px) and (max-width: 510px) {
+@media (min-width: 321px) and (max-width: 510px) {
   .background-img-2 .content .section-3-txt .about-us .about-speciality-services .services svg {
     width: 25px;
     height: 25px;
+  }
+}
+@media (min-width: 200px) and (max-width: 321px) {
+  .background-img-2 .content .section-3-txt .about-us .about-speciality-services .services svg {
+    width: 20px;
+    height: 20px;
   }
 }
 .background-img-2 .content .section-3-txt .about-us .about-speciality-services .services div {
@@ -1043,7 +1056,23 @@ img {
     line-height: 128%;
   }
 }
-@media (min-width: 200px) and (max-width: 510px) {
+@media (min-width: 426px) and (max-width: 510px) {
+  .background-img-2 .content .section-3-txt .about-us .bg-btn-2 {
+    height: 20px;
+    width: 115px;
+    font-size: 10px;
+    line-height: 118%;
+  }
+}
+@media (min-width: 321px) and (max-width: 426px) {
+  .background-img-2 .content .section-3-txt .about-us .bg-btn-2 {
+    height: 30px;
+    width: 115px;
+    font-size: 10px;
+    line-height: 118%;
+  }
+}
+@media (min-width: 200px) and (max-width: 321px) {
   .background-img-2 .content .section-3-txt .about-us .bg-btn-2 {
     height: 20px;
     width: 115px;
