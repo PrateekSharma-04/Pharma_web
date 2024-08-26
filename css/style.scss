@@ -1641,6 +1641,10 @@ img {
                     border: 0.5px solid #CECECE;
                     margin-bottom: 10px;
                     color: $primary-text-color;
+
+                    @media(max-width : 324px) {
+                        font-size: 12px !important;
+                    }
                 }
 
                 .sub-title {
